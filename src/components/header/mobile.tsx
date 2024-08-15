@@ -7,12 +7,7 @@ import { FaBars, FaSearch} from 'react-icons/fa';
 import { HiOutlineArrowSmallLeft, HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 
-import Image from "next/image"
-import Link from "next/link"
-
-// import styles from "@/app/page.module.css";
-
-import styles from "./mobile.module.css"
+import styles from "@/app/page.module.css";
 
 interface MenuItem {
   title: string;
