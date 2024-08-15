@@ -1,0 +1,31 @@
+:root {
+  --max-width: 1440px;
+  --bg-color: #000000;
+  --font-color: #ffff;
+  --gradient: linear-gradient(90deg, #6cafff, #ff7bad 27.6%, #ffc940 63.54%, #ffc940);
+  --gradient2: linear-gradient(120deg, #ff4593 -60%, #ffe713 120%);
+  --newGrad: linear-gradient(103.52deg, #6cafff -36.82%, #ff7bad 3.82%, #ffc940 56.73%, #ffc940 110.4%);
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

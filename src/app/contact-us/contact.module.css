@@ -1,0 +1,194 @@
+.contactOuter{
+    margin-top: 90px;
+    background: url(/contact-us/back-overlay.svg) no-repeat;
+    background-position: top right; 
+    background-size: contain; 
+    padding: 80px 0;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.contactInner{
+    background: url(/contact-us/contact-mesh-overlay.svg) #0000;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInnerStart{
+    width: var(--max-width);
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contactContent{
+    width: 615px;
+}
+
+.headingH2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #121212;
+}
+
+.contentMailOuter{
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    row-gap: 35px;
+}
+
+.mailSpan{
+    display: block;
+    color: #949494;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.mailLink, .contentAddressSpan{
+    color: #121212;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.contentAddress{
+    width: 440px;
+    margin-top: 35px;
+}
+
+
+.contactFormContactOuter{
+    width: 490px;
+    background-color: #ffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+
+.inpMessage, .inpMobile, .inpName, .inpEmail{
+    margin: 20px 0px;
+}
+
+.label{
+    color: #121212;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.inputName, .inputMobile, .inputOption, .inputEmail{
+    width: 450px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(221, 221, 221, 0.3);
+}
+
+.checkBox{
+    padding: 10px;
+    color: #121212;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.checkBoxLabel{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.checkBoxMark{
+    margin-top: 3.5px;
+}
+
+.inputOption{
+    padding: 0px 20px;
+}
+
+.inputOptionop{
+    padding: 10px;
+}
+
+.formBtton, .checkBox{
+    margin-top: 30px;
+}
+
+.heroButton{
+    position: relative;
+    width: 450px;
+    height: 50px;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer; 
+    border: none;
+  }
+  
+  .heroButton:hover{
+    background-color: #121212;
+    color: #ffff;
+  }
+
+
+
+
+  @media (max-width:1300px){
+    
+    .contactInnerStart{
+        width: 90%;
+        padding: 0px 2%;
+    }
+
+  }
+
+  @media (max-width:1200px){
+
+    .contentMailOuter{
+        grid-template-columns: repeat(1, 5fr);
+    }
+
+  }
+
+  @media (max-width:1080px){
+
+    .contactContent{
+        width: 50%;
+    }
+
+    .contactFormContactOuter{
+        width: 100%;
+    }
+    
+    .inputName, .inputMobile, .inputOption, .inputEmail,
+    .heroButton{
+        width: 100%;
+    }
+    
+  }
+
+  @media (max-width:880px){
+
+    .contentMailOuter{
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+    .contactInnerStart{
+        flex-direction: column;
+    }
+
+    .contactForm{
+        margin-top: 40px;
+    }
+
+  }
