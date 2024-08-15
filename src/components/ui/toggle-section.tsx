@@ -53,17 +53,17 @@ const ToggleContent: React.FC<{ contentItems: ContentItem[] }> = ({ contentItems
     return (
         <div className={styles.multiContent}>
             <div className={styles.toggleSidebar}>
-                <ul>
                 <h4 className={styles.toggleH4}>Applied Finance</h4>
-                {contentItems.map(item => (
-                    <li key={item.id}>
-                    <button
-                        className={styles.toggleButton} 
-                        onClick={() => handleClick(item.id)}>
-                        {item.label}
-                    </button>
-                    </li>
-                ))}
+                <ul className={styles.toogleUl}>
+                    {contentItems.map(item => (
+                        <li key={item.id}>
+                            <button
+                                className={styles.toggleButton} 
+                                onClick={() => handleClick(item.id)}>
+                                {item.label}
+                            </button>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className={styles.toggleContent}>

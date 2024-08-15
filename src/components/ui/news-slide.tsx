@@ -51,9 +51,9 @@ const NewsSlide: React.FC = () => {
       console.log('Handling resize...');
       const screenWidth = window.innerWidth;
       console.log('Screen width:', screenWidth);
-      if (screenWidth <= 620) {
+      if (screenWidth <= 980) {
         setSlidesPerPage(1);
-      } else if (screenWidth <= 930) {
+      } else if (screenWidth <= 1080) {
         setSlidesPerPage(2);
       } else if (screenWidth <= 1250) {
         setSlidesPerPage(3);
@@ -115,8 +115,16 @@ const NewsSlide: React.FC = () => {
       </div>
       
       <div className={styles.sliderContainer}>
-          <div className={styles.slides}>{renderSlides()}</div>        
-        </div>
+        <div className={styles.slides}>{renderSlides()}</div>        
+      </div>
+      <div className={styles.buttondiv2}>
+        <button className={styles.sliderButton} onClick={prevSlides}>
+          <IoIosArrowRoundBack  className={styles.masterCrousIcons} />
+        </button>
+        <button className={styles.sliderButton} onClick={nextSlides}>
+          <IoIosArrowRoundForward className={styles.masterCrousIcons} />
+        </button>
+      </div>
     </div>
   );
 };

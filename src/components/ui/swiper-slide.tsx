@@ -13,14 +13,14 @@ import Image from 'next/image';
 const SwiperSec = () => {
 
   const breakpoints = {
-    370: { slidesPerView: 1.1 },
-    390: { slidesPerView: 1.2 },
-    450: { slidesPerView: 1.2 },
-    470: { slidesPerView: 1.3 },
-    520: { slidesPerView: 1.5 },
-    600: { slidesPerView: 1.7 },
-    650: { slidesPerView: 3 },
-    700: { slidesPerView: 3.5 },
+    370: { slidesPerView: 1 },
+    390: { slidesPerView: 1 },
+    450: { slidesPerView: 1 },
+    470: { slidesPerView: 1 },
+    520: { slidesPerView: 1 },
+    600: { slidesPerView: 2 },
+    650: { slidesPerView: 2 },
+    700: { slidesPerView: 3 },
     900: { slidesPerView: 4 },
     1200: { slidesPerView: 4 },
     1400: { slidesPerView: 4 },

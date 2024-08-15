@@ -23,9 +23,9 @@ const MasterExp = () => {
     470: { slidesPerView: 1},
     520: { slidesPerView: 1 },
     600: { slidesPerView: 1 },
-    650: { slidesPerView: 1 },
-    700: { slidesPerView: 1.2 },
-    900: { slidesPerView: 1.5 },
+    640: { slidesPerView: 1 },
+    700: { slidesPerView: 1 },
+    900: { slidesPerView: 1 },
     1200: { slidesPerView: 1.5 },
     1400: { slidesPerView: 2 },
   };
